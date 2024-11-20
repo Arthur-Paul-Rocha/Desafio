@@ -10,6 +10,13 @@ export class Editorial {
   @Column()
   nombre: string;
 
+  @Column()
+  direccion: string;
+
+  @Column()
+  cuit: string;
+
   @OneToMany(() => Libro, (libro) => libro.editorial)
   libros: Libro[];
 }
+
